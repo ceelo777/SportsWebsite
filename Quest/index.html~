@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> HTML RSS Viewer </TITLE>
+<body>
+<a href="home.html">Click here to go back to the home</a>
+</body>
+<script>
+  var rssDoc = new ActiveXObject("MSXML2.DOMDocument.3.0");
+  rssDoc.onreadystatechange = popData;
+
+  function displayRSS(path){
+ mainTitle.href = "";
+ mainTitle.innerHTML = "";
+ items.innerHTML = "";
+
+ rssDoc.load(path);
+  }
+
+  function popData(){
+    if(rssDoc.readyState!=4)
+  return;
+
+ // Title
+ mainTitle.href = rssDoc.selectSingleNode("/rss/channel/link").text;
+ mainTitle.innerHTML = rssDoc.selectSingleNode("/rss/channel/title").text;
+
+ // Items
+    var rssItems = rssDoc.selectNodes("/rss/channel/item");
+ for(var i=0;i<rssItems.length;i++)
+ {
+  var item='<li><a href="' + rssItems[i].selectSingleNode("./link").text + '" class="itemTitle">';
+  item+=rssItems[i].selectSingleNode("./title").text
+     item+='</a><br/><div class=item>';
+  item+=rssItems[i].selectSingleNode("./description").text;
+  item+='</div></li><br/>';
+  items.innerHTML+=item;
+ }
+
+  }
+</script>
+ <style>
+ .title{
+  font-family: verdana;
+  font-weight: bold;
+ }
+ .itemTitle{
+  font-family: verdana;
+  font-size: 10pt;
+ }
+ .item{
+  font-family: verdana;
+  font-size: 10pt;
+ }
+ </style>
+</HEAD>
+
+<BODY>
+<iframe src="espn.html" height="500" width="450" scrolling="auto"></iframe>
+<br>
+<br>
+<iframe src="nfl.html" height="500" width="450" scrolling="auto"></iframe>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</BODY>
+</HTML>

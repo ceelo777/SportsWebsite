@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>CLSL Sports</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -20,23 +20,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
     <a href="news.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Latest News</a>
-    <a href="stats.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Player Stats</a>
-    <a href="draft.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Draft</a>
     <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
   </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
-  </div>
 </div>
-
 <!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">CLSL Sports</h1>
+  <h1 class="w3-margin w3-jumbo">News Articles (3  Daily)</h1>
   <p class="w3-xlarge"></p>
 </header>
 
@@ -44,12 +33,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Welcome to CLSL!</h1>
-      <h5 class="w3-padding-32">We are ten times better than ESPN, providing more than just sports articles. CLSL focuses on basketball, offering information in a variety of areas. Find live updates, player stats, and even projections for the upcoming NBA season.</h5>
+      <h1>Warriors SWEEP the Cavaliers!</h1>
+      <a href="http://www.espn.com/nba/game?gameId=401034614"><img src="https://wonderpunter.com/wp-content/uploads/lebron-cavs-warriors-1.jpg" width="512" height="288"></a>
+      <br>
+      <h1>Lebron James: Free Agent?</h1>
+      <a href="http://www.espn.com/nba/story/_/id/23740295/lebron-james-cleveland-cavaliers-addresses-free-agency-decision-nba-finals-loss"><img src="https://amp.businessinsider.com/images/5a33ef464aa6b5b51a8b50ae-750-562.jpg" width="512" height="288"></a>
+      <h1>Kevin Durant Named Finals MVP</h1>
+      <a href="http://www.espn.com/nba/story/_/id/23739404/kevin-durant-named-nba-finals-mvp"><img src="https://s.yimg.com/ny/api/res/1.2/scP6A71F60NYcCTnqaMdhA--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTEyO2g9MzQx/http://media.zenfs.com/en_us/Sports/ap/201806091301468733150" width="512" height="288"</a>
     </div>
 
     <div class="w3-third w3-center">
-      <img src="https://www.planwallpaper.com/static/images/nba2.jpg" width="480" height="300">
+      <img src="https://media.giphy.com/media/VkX4wFkaYklq0/giphy.gif" width="480" height="1100">
     </div>
   </div>
 </div>

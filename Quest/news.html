@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<title>CLSL Sports</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="news.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Latest News</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Updating Thingy</a>
+  </div>
+</div>
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">News Articles (3  Daily)</h1>
+  <p class="w3-xlarge"></p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Warriors SWEEP the Cavaliers!</h1>
+      <a href="http://www.espn.com/nba/game?gameId=401034614"><img src="https://wonderpunter.com/wp-content/uploads/lebron-cavs-warriors-1.jpg" width="512" height="288"></a>
+      <br>
+      <h1>Lebron James: Free Agent?</h1>
+      <a href="http://www.espn.com/nba/story/_/id/23740295/lebron-james-cleveland-cavaliers-addresses-free-agency-decision-nba-finals-loss"><img src="https://amp.businessinsider.com/images/5a33ef464aa6b5b51a8b50ae-750-562.jpg" width="512" height="288"></a>
+      <h1>Kevin Durant Named Finals MVP</h1>
+      <a href="http://www.espn.com/nba/story/_/id/23739404/kevin-durant-named-nba-finals-mvp"><img src="https://s.yimg.com/ny/api/res/1.2/scP6A71F60NYcCTnqaMdhA--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTEyO2g9MzQx/http://media.zenfs.com/en_us/Sports/ap/201806091301468733150" width="512" height="288"</a>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="https://media.giphy.com/media/VkX4wFkaYklq0/giphy.gif" width="480" height="1100">
+    </div>
+  </div>
+</div>
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: Failure is the path to success.</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
